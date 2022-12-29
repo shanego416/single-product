@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none !important;
+  color: #fff;
+}
+
+a::after {
+  text-decoration: none;
+}
+
+/* NAV Starts*/
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: 3px dotted rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-name {
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 8px;
+  font-weight: lighter;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button {
+  padding: 0px 16px;
+}
+
+.first-name {
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: lighter;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.last-name {
+  font-weight: lighter;
+  padding-right: 4px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.topnav > .logo > img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+/* nav links style*/
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Poppins, sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 2px;
+  }
+
+  .logo-name {
+    display: none;
+  }
+
+  .logo-img {
+    margin: auto;
+    padding-top: 16px;
+  }
+}
+
+/* NAV Ends*/
+
+/*Header Photo Starts*/
+
+.header-photo-container > .header-photo {
+  width: 100vw;
+  height: 50vh;
+  margin: 64px 0px;
+  z-index: 0;
+}
+
+.header-photo-container > .header-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.single-product-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: #fff;
+}
+
+.single-product-header-text > h1 {
+  font-size: 56px;
+}
+
+.single-product-header-text > .single-product-header-tagline {
+  font-size: 24px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  .single-product-header-text {
+    transform: translate(-50%, -25%);
+  }
+}
+
+/*Header Photo Ends*/
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  grid-template-rows: auto;
+  padding: 2px 0px;
+  width: 100vw;
+  margin: 32px 0px -2px 0px;
+  position: fixed;
+  bottom: 0;
+}
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  border: 2px solid black;
+  background-color: black;
+  height: 128px;
+}
+
+.social-icons > a > img {
+  display: block;
+  max-height: 64px;
+  max-width: 64px;
+}
+
+.social-icons > img {
+  max-height: 64px;
+  max-width: 64px;
+}
+
+.social-icon-1 {
+  justify-content: right;
+}
+
+.social-icon-2 {
+  justify-content: center;
+}
+
+.social-icon-3 {
+  justify-content: left;
+}
